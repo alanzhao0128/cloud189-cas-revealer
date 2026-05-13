@@ -42,7 +42,14 @@ Cloud189 CAS Revealer 自动化还原流程：
 
 ## 🚀 安装
 
-### 加载解压的扩展
+### 从 GitHub Releases 下载（推荐）
+1. 前往 [Releases](../../releases) 页面下载最新版 `cloud189-cas-revealer-v1.0.0.zip`
+2. 解压文件
+3. 打开 Chrome，访问 `chrome://extensions/`
+4. 开启右上角 **开发者模式**
+5. 点击 **加载已解压的扩展程序**，选择解压后的文件夹
+
+### 从源码构建
 1. 克隆本仓库
    ```bash
    git clone https://github.com/alanzhao0128/cloud189-cas-revealer.git

@@ -42,7 +42,14 @@ Cloud189 CAS Revealer automates the restore process:
 
 ## 🚀 Installation
 
-### Load Unpacked Extension
+### Download from GitHub Releases (Recommended)
+1. Go to the [Releases](../../releases) page and download the latest `cloud189-cas-revealer-v1.0.0.zip`
+2. Unzip the file
+3. Open Chrome, navigate to `chrome://extensions/`
+4. Enable **Developer Mode** (top-right toggle)
+5. Click **Load unpacked** and select the unzipped folder
+
+### Build from Source
 1. Clone this repo
    ```bash
    git clone https://github.com/alanzhao0128/cloud189-cas-revealer.git

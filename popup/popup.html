@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=420">
+  <title>CAS 还原</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CAS 还原</h1>
+      <span class="version">v1.0</span>
+    </header>
+
+    <section id="status-section">
+      <div class="status-header">
+        <span>连接状态</span>
+        <button id="refresh-btn" class="btn-icon" title="刷新目录和会话">↻</button>
+      </div>
+      <div class="status-row">
+        <span class="label">目录</span>
+        <span id="folder-path" class="value">—</span>
+      </div>
+      <div class="status-row">
+        <span class="label">会话</span>
+        <span id="session-status" class="value status-badge">未连接</span>
+      </div>
+    </section>
+
+    <section id="scan-section">
+      <div class="actions">
+        <button id="scan-btn" class="btn btn-primary" disabled>扫描 CAS 文件</button>
+        <label class="checkbox-row">
+          <input type="checkbox" id="delete-cas-checkbox">
+          <span>还原后删除 .cas</span>
+        </label>
+      </div>
+    </section>
+
+    <section id="results-section" class="hidden">
+      <div class="results-header">
+        <span id="results-count">0 个 CAS 文件</span>
+        <button id="select-all-btn" class="btn-text">全选</button>
+      </div>
+      <div id="results-list"></div>
+    </section>
+
+    <section id="upload-section" class="hidden">
+      <div class="actions">
+        <button id="verify-btn" class="btn btn-secondary">验证 (0)</button>
+        <button id="upload-btn" class="btn btn-success" disabled>秒传还原 (0)</button>
+      </div>
+    </section>
+
+    <section id="progress-section" class="hidden">
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="progress-text">0/0</div>
+    </section>
+
+    <section id="log-section" class="hidden">
+      <div id="log-output"></div>
+    </section>
+
+    <footer>
+      <span id="error-msg" class="error-msg hidden"></span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

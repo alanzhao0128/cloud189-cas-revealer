@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "天翼云盘 CAS 还原",
+  "version": "1.0.0",
+  "description": "扫描天翼云盘目录中的 CAS 占位文件，通过秒传接口在原路径下还原为真实文件",
+  "host_permissions": [
+    "https://*.189.cn/*",
+    "https://*.ctyun.cn/*",
+    "https://*.ctyunxs.cn/*",
+    "https://*.cloudcube.telecomjs.com/*",
+    "https://*.cloudcube.wuxi.cn/*",
+    "https://*.mini189.cn/*"
+  ],
+  "permissions": ["storage", "sidePanel"],
+  "side_panel": {
+    "default_path": "popup/popup.html"
+  },
+  "action": {
+    "default_title": "CAS 还原"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://cloud.189.cn/*", "https://m.cloud.189.cn/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

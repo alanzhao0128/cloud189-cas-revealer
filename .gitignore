@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Node / deps
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Chrome extension packed
+*.crx
+*.pem
+
+# Dev reference files
+input/

@@ -9,6 +9,14 @@ English | [简体中文](README_zh.md)
 
 ---
 
+## 🙏 Acknowledgments
+
+This project is deeply inspired by and built upon the remarkable **天翼云盘秒传助手** Tampermonkey userscript written by **liyk**. The core rapid upload (秒传) crypto signing flow, CAS file parsing logic, and API interaction patterns are adapted from that pioneering work.
+
+**Special thanks to liyk for open-sourcing the underlying mechanisms that made this Chrome extension possible.** ❤️
+
+---
+
 ## 🎯 The Pain it Solves
 
 Tianyi Cloud Drive (cloud.189.cn) uses a CAS (Content Addressable Storage) backend. When you move or copy files between accounts, you often end up with **`.cas` placeholder files** — tiny stubs (~200 bytes) that hold the file's cryptographic fingerprint but contain no actual data. These files cannot be previewed, downloaded, or shared.
